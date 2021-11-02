@@ -35,7 +35,7 @@ export function add (a, b, c) {
 
 ## Background
 
-This helper allows you to specify all your deprecation codes and messages in one place, getting out a function which you can use to emit deprecation warnings from your main code. It makes use of [process.emitWarning]() and the special `DeprecationWarning` warning type, meaning users can use Node's `--*-warnings` and `--*-deprecation` CLI flags to control the behavior of your deprecation warnings. It also makes sure that no warning code is emitted more than once to follow documented best practices.
+This helper allows you to specify all your deprecation codes and messages in one place, getting out a function which you can use to emit deprecation warnings from your main code. It makes use of [process.emitWarning](https://nodejs.org/api/process.html#processemitwarningwarning-type-code-ctor) and the special `DeprecationWarning` warning type, meaning users can use Node's `--*-warnings` and `--*-deprecation` CLI flags (see [the process `warning` event documentation](https://nodejs.org/api/process.html#event-warning)) to control the behavior of your deprecation warnings. It also makes sure that no warning code is emitted more than once to follow documented best practices.
 
 ## License
 
